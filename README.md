@@ -1,4 +1,4 @@
 MyMemories
 ==========
 
-An app similar to Evernote
+An Android app similar to Evernote.
