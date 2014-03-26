@@ -234,7 +234,7 @@ public class CreateStoryActivity extends StoryActivityBase {
 
 		Intent soundIntent = new Intent(this, SoundRecordActivity.class);
 		
-		File soundFile = getOutputMediaFile(MEDIA_TYPE_IMAGE);
+		File soundFile = getOutputMediaFile(MEDIA_TYPE_AUDIO);
 		
 		soundIntent.putExtra(SoundRecordActivity.EXTRA_OUTPUT, soundFile.getPath());
 		

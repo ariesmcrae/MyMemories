@@ -216,7 +216,10 @@ public class StoryViewFragment extends Fragment {
 
 					if (audioLinkPath != null && audioLinkPath.length() > 0) {
 						Ringtone ringtone = RingtoneManager.getRingtone(getActivity(), Uri.parse(audioLinkPath));
-						ringtone.play();						
+						
+						if (!ringtone.isPlaying()) {
+							ringtone.play();
+						}
 					}
 				}
 			});
