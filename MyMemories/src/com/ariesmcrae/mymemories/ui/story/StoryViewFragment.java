@@ -233,7 +233,10 @@ public class StoryViewFragment extends Fragment {
 				mediaController.setAnchorView(videoLinkView);
 				videoLinkView.setMediaController(mediaController);
 				videoLinkView.setVideoURI(Uri.parse(videoLinkPath));
-				videoLinkView.start();
+				
+				if (!videoLinkView.isPlaying()) {
+					videoLinkView.start();					
+				}
 			}
 			
 			// Display the image data
